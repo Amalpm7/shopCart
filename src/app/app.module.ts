@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProductlistComponent } from './productlist/productlist.component';
+import { HttpClientModule } from '@angular/common/http'
 
 const shop:Routes=[
   {
@@ -21,7 +22,8 @@ const shop:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(shop)
+    RouterModule.forRoot(shop),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
